@@ -6,15 +6,15 @@ tags = ["home assistant", "home automation", "raspberry pi", "zigbee"]
 description = "How I set up motion-activated christmas tree lights in my personal home automation system."
 +++
 
-The end of the year 2024 has arrived, and like many I took time to unite with family and exchange gifts. In between the festivities I took a couple of days off to recover from  the food and social events. Finally, being able to finish up some long due home tasks provides me with a good mood to start the new year clean (including cleaning up, organizing and archiving files and folders on PC and NAS).
+The end of the year 2024 has arrived, and like many I took time to unite with family and exchange gifts. In between the festivities I took a couple of days off to relax and finish some long due tasks at home, which provides me with a good mood to start the new year with a clean slate (including cleaning up, organizing and archiving files and folders on PC and NAS).
 
-Every Christmas, we get the nicest tree we can find and decorate it with trinkets we collected from our vacations together and add some nice lights. Every day, we'd turn on the lights before breakfast by plugging them in. Of course, instead of having to turn on the lights every time yourself, why not tinker for a couple of hours to turn the lights on automatically whenever you're at home?
+Every Christmas, we get the nicest tree we can find and decorate it with trinkets (including souvenirs collected on vacations abroad) and a string of warm yellow Christmas lights. Every day, we turn on the lights before breakfast by plugging them in. But what if, instead of having to turn on the lights every time yourself, you tinker for a couple of hours to turn the lights on automatically whenever you're at home?
 
 {{< video src="videos/hassio-xmas.mp4" height="300" autoplay="true" loop="true" muted="true" description="Turning on the tree with the TRADFRI remote connected with CC2531 wireless transceiver." >}}
 
 ### What did I need?
 
-Here’s a list of things I bought off the shelf:
+Here's a list of things I bought off the shelf:
 
 - Ikea TRADFRI Outlet and switch
 - Ikea TRADFRI Motion sensor
