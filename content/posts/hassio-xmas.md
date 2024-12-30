@@ -10,7 +10,7 @@ The end of the year 2024 has arrived, and like many I took time to unite with fa
 
 Every Christmas, we get the nicest tree we can find and decorate it with trinkets we collected from our vacations together and add some nice lights. Every day, we'd turn on the lights before breakfast by plugging them in. Of course, instead of having to turn on the lights every time yourself, why not tinker for a couple of hours to turn the lights on automatically whenever you're at home?
 
-{{< video src="/videos/hassio-xmas.mp4" height="300" autoplay="true" loop="true" muted="true" description="Turning on the tree with the TRADFRI remote connected with CC2531 wireless transceiver." >}}
+{{< video src="videos/hassio-xmas.mp4" height="300" autoplay="true" loop="true" muted="true" description="Turning on the tree with the TRADFRI remote connected with CC2531 wireless transceiver." >}}
 
 ### What did I need?
 

@@ -1,4 +1,4 @@
-baseURL = 'https://martijnvanbiervliet.github.io/blog'
+baseURL = 'https://martijnvanbiervliet.github.io/blog/'
 languageCode = 'en-us'
 title = 'Martijn Vanbiervliet'
 theme = 'PaperMod'
