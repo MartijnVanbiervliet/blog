@@ -6,7 +6,7 @@ title = 'All I want for Christmas is Zigbee'
 
 The end of the year 2024 has arrived, and like many I took time to unite with family and exchange gifts. In between the festivities I took a couple of days off to recover from  the food and social events. Finally, being able to finish up some long due home tasks provides me with a good mood to start the new year clean (including cleaning up, organizing and archiving files and folders on PC and NAS).
 
-Every Christmas, we get the nicest tree we can find and decorate it with trinkets we collected from our vacations together. This year we didn't get a tree, as we were abroad on vacation for most of the month, so we got ourselves a small plastic tree instead. Of course, instead of having to turn on the lights every time yourself, why not tinker for a couple of hours to turn on the lights whenever you're at home?
+Every Christmas, we get the nicest tree we can find and decorate it with trinkets we collected from our vacations together and add some nice lights. Every day, we'd turn on the lights before breakfast by plugging them in. Of course, instead of having to turn on the lights every time yourself, why not tinker for a couple of hours to turn the lights on automatically whenever you're at home?
 
 ### What did I need?
 
