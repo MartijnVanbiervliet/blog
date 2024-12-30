@@ -4,8 +4,6 @@ draft = true
 title = 'All I want for Christmas is Zigbee'
 +++
 
-# All I want for Christmas is Zigbee
-
 The end of the year 2024 has arrived, and like many I took time to unite with family and exchange pleasant gifts. In between the festivities I took a couple of days off to recover from all the food and social events. Finally, being able to finish up some long due home tasks provides me with a good mood to start the new year clean (including cleaning up, organizing and archiving files and folders on PC and NAS).
 
 Every Christmas, we get the nicest tree we can find and decorate it with trinkets we collected from our vacations together. This year we didn’t get a tree, as we were abroad on vacation for most of the month, so we got ourselves a small plastic replacement tree instead. Of course, instead of having to turn on the lights every time yourself, why not tinker for a couple of hours to have it do the work for you. 
