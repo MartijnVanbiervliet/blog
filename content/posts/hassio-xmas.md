@@ -21,13 +21,13 @@ Here's a list of things I bought off the shelf:
 - Raspberry Pi 3 Model B (also referred to as RPI from here)
     - I bought this in 2019 and it has been reliably running home assistant for over 5 years. 
 - Kingston A400 SSD 240GB
-    - The MicroSD card I originally got for the RPI started to corrupt after 4 years of continuous use (they have a limited number of read/write cycles). So replaced it with an SSD, which is better equipped to deal with the always on system.
+    - The MicroSD card I originally got for the RPI started to corrupt after 4 years of continuous use (they have a limited number of read/write cycles). So I replaced it with an SSD, which is better equipped to deal with the always-on system.
 - Zigbee CC2531 Wireless Transceiver
     - Low-power 2.4-GHz IEEE 802.15.4 USB dongle from Texas Instruments.
     - This radio device provides the communication between the RPI and other Zigbee-compatible devices.
     - At this time, there are better options available with better range, that support more devices. 
 - Texas Instruments CC Debugger for RF system-on-Chips + Downloader cable
-    - Used to flash the original CC2531 dongle for use as a Zigbee coordinator, to integrate with Zigbee2MQTT or Home Assistant to control other Zigbee devices.
+    - Used to flash the original CC2531 dongle for use as a Zigbee coordinator and integrate with Zigbee2MQTT or Home Assistant to control other Zigbee devices.
 
 Most home automation devices only work over your network if you also purchase the manufacturers hub device. By setting up the CC2531 as your own Zigbee controller, it can be used across a wide range of home automation devices that support Zigbee.
 
