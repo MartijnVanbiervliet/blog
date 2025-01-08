@@ -2,6 +2,7 @@ baseURL: 'https://www.martijnvanbiervliet.be/'
 languageCode: 'en-us'
 title: 'Martijn Vanbiervliet'
 theme: 'PaperMod'
-analytics:
+params:
+  analytics:
     clicky:
       SiteVerificationTag: "101474064"
