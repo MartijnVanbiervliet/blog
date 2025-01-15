@@ -1,0 +1,18 @@
+<!-- .Site.Social was deprecated in Hugo v0.124.0 but PaperMod v8.0 still uses it. We override this  to fix the issue. When there's a new release of PaperMod, remove this file.  -->
+{{- if .Params.cover.image -}}
+<meta name="twitter:card" content="summary_large_image" />
+{{- if (ne $.Params.cover.relative true) }}
+<meta name="twitter:image" content="{{ .Params.cover.image | absURL }}" />
+{{- else }}
+<meta name="twitter:image" content="{{ (path.Join .RelPermalink .Params.cover.image ) | absURL }}" />
+{{- end}}
+{{- else }}
+{{- $images := partial "partials/templates/_funcs/get-page-images" . -}}
+{{- with index $images 0 -}}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="{{ .Permalink }}" />
+{{- else -}}
+<meta name="twitter:card" content="summary"/>
+{{- end -}}
+{{- end }}
+<meta name="twitter:title" content="{{ .Title }}"/>
