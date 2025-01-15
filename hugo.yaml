@@ -6,3 +6,8 @@ params:
   analytics:
     clicky:
       SiteVerificationTag: "101474064"
+menu:
+  main:
+    - name: "About"
+      url: "/about/"
+      weight: 1
