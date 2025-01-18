@@ -13,6 +13,6 @@ The year before, I finished my Master's in Informatics at KU Leuven, specializin
 
 During my Bachelor's degree in Informatics, I focused on software development for web and mobile applications. During these studies, internships, and student work, I gained experience with JavaScript, C#, and web application frameworks.
 
-In my spare time, I enjoy hiking vacations, reading books, tinkering with home automation, and staying updated with the latest car and technology news. I also dabble in photography to capture the natural beauty I encounter during our vacations. Additionally, I play the guitar and enjoy wall climbing, although I don't get to do these as often as I'd like.
+In my spare time, I enjoy hiking vacations, reading books, tinkering with home automation, and staying updated with the latest car and technology news. I also dabble in photography to capture the natural beauty I encounter on vacation. Additionally, I play the guitar and enjoy wall climbing, although I don't get to do these as often as I'd like.
 
 I like attending Python conferences and meetups in and around Belgium. Feel free to connect with me if you share similar interests or want to discuss software engineering!
