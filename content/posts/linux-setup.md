@@ -4,8 +4,18 @@ draft = true
 title = 'My personal Linux setup'
 +++
 
-As a software developer, I spend a lot of time in the terminal. Using a terminal is the holy grail of power users. Every action you take is literally at your fingertips (the keys on your keyboard).
-Using a terminal becomes even more enjoyable if you configure it the way you like and learn how to use the powerful tools that are available. The overview below is how I personally set up my terminal every time I set up a new machine. You can copy it in its entirety if you like, but I recommend going through each step taking some of your own choices.
+As a software developer, I spend a lot of time in the terminal.  The terminal is the holy grail of power users. Every action you take is directly at your fingertips - the keys on your keyboard. Learning to use the terminal efficiently not only boosts your productivity but also makes the experience more enjoyable. And for things you use every day, what’s stopping you from making it more enjoyable?
+
+Brandon Rhodes expresses it well in this [talk](https://youtu.be/I56oFTm9UlE?si=9gMgSN2pq7l2tNmF). Every once in a while, it’s a good idea to stop to sharpen your tools. It’s no use mowing a large field of grass with a blunt scythe.
+
+Learning how your tools work is essential if you use them day in and day out. You can tailor the configuration to your specific preferences and requirements to get the best out of it.
+
+In this guide, I'll share the tools and configurations I use when setting up a new Linux/Unix terminal environment. If you want, you can copy it entirely. But to get the most enjoyment out of it, I recommend to use it as a source of inspiration. Here's some other sources that inspired me on this topic:
+
+* [mischavandenburg](https://github.com/mischavandenburg/dotfiles/tree/main)
+* [bartekspitza](https://youtu.be/mSXOYhfDFYo?si=XOWWMjgAvOWjGMcx)
+* [ThePrimeagen](https://github.com/ThePrimeagen)
+* [omerxx](https://github.com/omerxx/dotfiles/tree/master)
 
 # Basic setup
 The following instructions assume you're on a Linux system with the `apt` package manager, like Ubuntu or Debian. However, if you're using other distro's that's fine as well, just replace `apt` with the package manager of your choice.
@@ -36,7 +46,7 @@ brew install gcc
 ```
 
 # Configure shell theme
-A shell theme is something highly personal. And I tend to switch from one or the other every once in a while. First, you need to choose which shell technology you want to use: Bash, Zsh or Fish or the most popular ones. I recommend going for either Bash or Zsh if you're a beginner, as most tools we're installing will support either of these for configuration.
+Your shell theme is based on personal preference, and I sometimes switch between different ones. When getting started, you'll need to choose your shell technology: Bash, Zsh, or Fish are the most popular options. For beginners, I recommend either Bash or Zsh since most tools we'll be installing support their configuration formats.
 
 ###  Zsh with Powerlevel10K theme (optional)
 We can use Zsh to improve and augment our terminal, feels more familiar to MacOS systems. Or choose to keep using Bash and [install Oh My Bash instead](#Oh My Bash).
@@ -64,7 +74,7 @@ curl -sS https://starship.rs/install.sh | sh
 ```
 
 # Install personal dotfiles
-Every time you move to a new machine, it's quite cumbersome to set everything up. Luckily on Linux, a lot of your basic configuration is stored inside dotfiles and `.config` inside your home directory. You can store them on a Git repository or any other place where you can access them easily.
+Every time you move to a new machine, it's quite cumbersome to set everything up. Luckily on Linux, a lot of your basic configuration is stored inside dotfiles and `.config` inside your home directory. You can store them on a Git repository or any other place where you can access them easily. I stored my dotfiles in a public Github repository, so I can easily clone them on any machine I work on.
 
 ### Github CLI
 Get the GitHub CLI to easily authorize with private git repositories.
@@ -80,13 +90,20 @@ gh auth login
 ```bash
 gh repo clone MartijnVanbiervliet/dotfiles
 ```
-Run installer
+
+In my dotfiles repository, I've included an installer script that will symlink the dotfiles to my home directory. Using parameters to the installer script, you can choose to install only specific parts of the configuration. I recommend setting up your own repository for your personal dotfiles!
 ```bash
 chmod +x ~/dotfiles/installer
 ~/dotfiles/installer
 ```
 
 # Text editor
+Modern code and text editors are ubiquitous. There are dozens to choose from. However, the old-school Vim - introduced in 1991 - still has a large following thanks to its keyboard-first approach. Even though, most developers remember it as the editor they couldn’t close when navigating through files on a Linux server, spawning an entire category of internet memes.
+
+Vim encourages users to abandon their mouse and perform all actions with the keyboard. Although there’s a steeper learning curve, this experience allows you to perform frequent actions faster and more satisfyingly.  By not having to remove your hands from the keyboard and staying inside the terminal, there are fewer distractions to your work. Since I tried Vim motions - the default keyboard strokes and combos in Vim - I have fully embraced them in writing and coding. There is a reason why most modern code editors support Vim motions out-of-the-box or using a plugin.
+
+However, Vim misses a lot of those features that modern code editors support and programmers can not live without: extensions, code debuggers, language engines, and visually interesting graphical interfaces. Neovim, a newer and modern version of Vim, attempts to solve all these limitations.
+
 ## Neovim
 [Use Brew to install](https://github.com/neovim/neovim/blob/master/INSTALL.md#homebrew-on-macos-or-linux)
 ```bash
@@ -170,7 +187,7 @@ https://www.youtube.com/watch?v=2OHrTQVlRMg
 https://www.youtube.com/watch?v=szehPBOwqlI
 * rmline
 * rsync
-* rclone (rsync for cloud storage
+* rclone (rsync for cloud storage)
 * btop (top, htop alternative)
 * ntfy (notifications from terminal on mac)
 
