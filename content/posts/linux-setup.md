@@ -1,7 +1,7 @@
 +++
 date = '2025-01-13T21:48:55+01:00'
 draft = true
-title = 'My personal Linux setup'
+title = 'My personal terminal setup'
 +++
 
 As a software developer, I spend a lot of time in the terminal.  The terminal is the holy grail of power users. Every action you take is directly at your fingertips - the keys on your keyboard. Learning to use the terminal efficiently not only boosts your productivity but also makes the experience more enjoyable. And for things you use every day, what’s stopping you from making it more enjoyable?
@@ -16,6 +16,7 @@ In this guide, I'll share the tools and configurations I use when setting up a n
 * [bartekspitza](https://youtu.be/mSXOYhfDFYo?si=XOWWMjgAvOWjGMcx)
 * [ThePrimeagen](https://github.com/ThePrimeagen)
 * [omerxx](https://github.com/omerxx/dotfiles/tree/master)
+* [Tech Craft](https://youtu.be/2OHrTQVlRMg?si=4VUN2J4W92AExoNT)
 
 # Basic setup
 The following instructions assume you're on a Linux system with the `apt` package manager, like Ubuntu or Debian. However, if you're using other distro's that's fine as well, just replace `apt` with the package manager of your choice.
@@ -30,8 +31,8 @@ sudo apt-get update && sudo apt-get --upgrade install \
 	zip unzip sed curl wget git htop ncdu tree
 ```
 ### Install Brew
-Install the Brew package manager to get access to tools that are not available on `apt`.
-https://brew.sh/
+Install the [Brew package manager](https://brew.sh/)to get access to tools that are not available on `apt`.
+
 Install Brew and run the suggested command to add it to your PATH.
 ```bash
 (echo; echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"') >> /home/martijn/.bashrc  
@@ -67,8 +68,7 @@ Install the [Powerlevel10k theme for Oh My Zsh](https://github.com/romkatv/power
 Consider skipping Zsh and modifying Bash instead with [Oh My Bash](https://github.com/ohmybash/oh-my-bash)
 
 ### Starship (Bash, Zsh, Fish and others)
-Modify the Bash shell with Starship
-https://starship.rs/guide/
+[Starship](https://starship.rs/guide/) supports Bash, Zsh, Fish, and others.
 ```
 curl -sS https://starship.rs/install.sh | sh
 ```
@@ -152,7 +152,7 @@ sudo apt install wslu
 Set BROWSER env to support opening host browser from WSL VM.
 ```bash
 echo "export BROWSER=wslview" >> ~/.bashrc
-````
+```
 This adds support to open your browser to authenticate with Github CLI later in the installation.
 [Reference](https://superuser.com/questions/1262977/open-browser-in-host-system-from-windows-subsystem-for-linux)
 
@@ -164,11 +164,13 @@ brew install lazygit
 
 ### tldr-pages
 [Install tldr-pages](https://github.com/tldr-pages/tldr?tab=readme-ov-file#how-do-i-use-it) 
-tldr-pages is a super useful tool for getting a quick glance at how to use a command-line tool. Instead of digigng through the man pages, tldr shows - at a glance - what the most prevalent way is to use that command. tldr-pages is a community-driven open-source project that can be use addition to traditional `man` pages.
+tldr-pages is a super useful tool for getting a quick glance at how to use a command-line tool. Instead of digging through the man pages, tldr shows - at a glance - what the most prevalent way is to use that command. tldr-pages is a community-driven open-source project that can be used addition to traditional `man` pages.
 
 ### Pyenv
 Manage multiple Python versions using `pyenv`. An essential tool for Python developers. It allows you to install and manage multiple versions of Python. This is a must-have if you're working on Python projects that are based on different versions.
+
 [Install with Brew.](https://github.com/pyenv/pyenv?tab=readme-ov-file#homebrew-in-macos)
+
 [Set up the shell environment for Bash or Zsh.](https://github.com/pyenv/pyenv?tab=readme-ov-file#set-up-your-shell-environment-for-pyenv)
 
 ### NodeJS and NPM
