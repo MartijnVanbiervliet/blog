@@ -2,6 +2,7 @@
 date = '2025-01-13T21:48:55+01:00'
 draft = true
 title = 'My personal terminal setup'
+description = "Tools and configuration for my favorite terminal environment"
 +++
 
 As a software developer, I spend a lot of time in the terminal.  The terminal is the holy grail of power users. Every action you take is directly at your fingertips - the keys on your keyboard. Learning to use the terminal efficiently not only boosts your productivity but also makes the experience more enjoyable. And for things you use every day, what’s stopping you from making it more enjoyable?
@@ -100,7 +101,7 @@ chmod +x ~/dotfiles/installer
 # Text editor
 Modern code and text editors are ubiquitous. There are dozens to choose from. However, the old-school Vim - introduced in 1991 - still has a large following thanks to its keyboard-first approach. Even though, most developers remember it as the editor they couldn’t close when navigating through files on a Linux server, spawning an entire category of internet memes.
 
-Vim encourages users to abandon their mouse and perform all actions with the keyboard. Although there’s a steeper learning curve, this experience allows you to perform frequent actions faster and more satisfyingly.  By not having to remove your hands from the keyboard and staying inside the terminal, there are fewer distractions to your work. Since I tried Vim motions - the default keyboard strokes and combos in Vim - I have fully embraced them in writing and coding. There is a reason why most modern code editors support Vim motions out-of-the-box or using a plugin.
+Vim encourages users to abandon their mouse and perform all actions with the keyboard. Although there's a steeper learning curve, this experience allows you to perform frequent actions faster and more satisfyingly.  By not having to remove your hands from the keyboard and staying inside the terminal, there are fewer distractions to your work. Since I tried Vim motions - the default keyboard strokes and combos in Vim - I have fully embraced them in writing and coding. There is a reason why most modern code editors support Vim motions out-of-the-box or using a plugin.
 
 However, Vim misses a lot of those features that modern code editors support and programmers can not live without: extensions, code debuggers, language engines, and visually interesting graphical interfaces. Neovim, a newer and modern version of Vim, attempts to solve all these limitations.
 
@@ -111,20 +112,18 @@ brew install neovim
 ```
 
 ### LazyVim
-[Install LazyVim](http://www.lazyvim.org/installation) from scratch for a clean install. Or choose for the personal configuration as in the following section
-
-### Personal NeoVim config
-```bash
-cd ~/.config
-gh repo clone MartijnVanbiervliet/nvim-config
-ln -s ~/.config/nvim-config ~/.config/nvim
-```
+LazyVim is a pre-configured Neovim configuration that is easy to use and customize. I already have a personal NeoVim configuration, based on LazyVim, as part of my dotfiles (as described in [Install personal dotfiles](#Install-personal-dotfiles)). But you can also install LazyVim from scratch.
+[Install LazyVim](http://www.lazyvim.org/installation).
 
 # Terminal multiplexer
-## Tmux
-tmux is the go-to terminal multiplexer for the Unix shell.
+A terminal multiplexer allows you to create multiple sessions in a single terminal window. Following the same benefits as described in the [Text editor](#Text-editor) section, it allows you to keep your workflow going without having to open a new terminal window. The most popular terminal multiplexer is [tmux](https://github.com/tmux/tmux). But there are alternatives like:
+* [Screen](https://www.gnu.org/software/screen/)
+* [Zellij](https://zellij.dev/)
 
-Install tmux plugin manager
+## Tmux
+To leverage the benefits of tmux, install the tmux plugin manager and install the tmux configuration from my dotfiles.
+
+Install tmux plugin manager:
 ```bash
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
@@ -173,23 +172,33 @@ Manage multiple Python versions using `pyenv`. An essential tool for Python deve
 
 [Set up the shell environment for Bash or Zsh.](https://github.com/pyenv/pyenv?tab=readme-ov-file#set-up-your-shell-environment-for-pyenv)
 
-### NodeJS and NPM
-Install these to install Pyright via Mason on Neovim
-https://github.com/nvm-sh/nvm
+### Fzf
+[Fzf](https://github.com/junegunn/fzf) is a command-line fuzzy finder that revolutionizes how you search through files, directories, command history, and more. By simply entering a part of the filename, you can quickly find the file you're looking for.
 
-# Other interesting command line tools
-https://www.youtube.com/watch?v=2OHrTQVlRMg
-* exa (better ls)
-* ripgrep (better grep)
-* bat (cat alternative with syntax highlighting and line numbers)
-* fzf (fuzzy finder)
-* zoxide (better cd)
-* entr (pipe to this tool to automatically rerun based on given files changes)
-* midnight commander (file explorer)
-https://www.youtube.com/watch?v=szehPBOwqlI
-* rmline
-* rsync
-* rclone (rsync for cloud storage)
-* btop (top, htop alternative)
-* ntfy (notifications from terminal on mac)
+Some key features:
+- Fuzzy search through files and directories
+- Search through command history
+- Integration with vim/neovim
+- Customizable key bindings
+- Preview window for files
+
+Install with:
+```bash
+brew install fzf
+```
+
+# Other
+Finally, here are some other tools that I find useful, I encourage you to see if they can help you improve your workflow.
+
+* **exa**: Modern replacement for `ls` with color-coding, git integration and tree view support
+* **ripgrep**: Lightning fast search tool that respects .gitignore rules and supports regex patterns
+* **bat**: Enhanced `cat` command with syntax highlighting, line numbers and git integration
+* **zoxide**: Smart directory jumper that learns from your navigation habits
+* **entr**: File watcher utility that runs commands when files change - great for development
+* **midnight commander**: Feature-rich terminal file manager with dual pane interface
+* **rsync**: Fast and versatile file copying/syncing tool with remote capabilities
+* **rclone**: Swiss army knife for cloud storage - sync files across cloud providers
+* **btop**: Resource monitor with CPU, memory, network and process views
+* **ntfy**: Send push notifications to your devices from command line or scripts
+
 
