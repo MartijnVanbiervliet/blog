@@ -1,40 +1,31 @@
 +++
 date = '2025-01-13T21:48:55+01:00'
 draft = true
-title = 'My personal terminal setup'
-description = "Tools and configuration for my favorite terminal environment"
+title = 'Supercharge your terminal'
+description = "How to set up a terminal environment that's both powerful and enjoyable"
 +++
 
-As a software developer, I spend a lot of time in the terminal.  The terminal is the holy grail of power users. Every action you take is directly at your fingertips - the keys on your keyboard. Learning to use the terminal efficiently not only boosts your productivity but also makes the experience more enjoyable. And for things you use every day, what’s stopping you from making it more enjoyable?
+As a software engineer, I spend a lot of time in the terminal. The terminal is the holy grail of power users. Every action you take is directly at your fingertips - the keys on your keyboard. Learning to use the terminal effectively not only boosts your productivity but also makes the experience more enjoyable.
 
-Brandon Rhodes expresses it well in this [talk](https://youtu.be/I56oFTm9UlE?si=9gMgSN2pq7l2tNmF). Every once in a while, it’s a good idea to stop to sharpen your tools. It’s no use mowing a large field of grass with a blunt scythe.
+Brandon Rhodes expresses it well in this [talk](https://youtu.be/I56oFTm9UlE?si=9gMgSN2pq7l2tNmF). Every once in a while, it’s a good idea to stop and sharpen your tools. It's no use mowing a large field of grass with a blunt scythe. Learning how your tools work is essential if you use them day in and day out. You can tailor the configuration to your specific preferences and requirements to get the best out of it.
 
-Learning how your tools work is essential if you use them day in and day out. You can tailor the configuration to your specific preferences and requirements to get the best out of it.
+In this guide, I'll share some tools and configurations for setting up a new Linux/Unix terminal environment. You can use it as a source of inspiration to set up your own terminal environment. Here's some other sources that inspired me on this topic: [mischavandenburg](https://github.com/mischavandenburg/dotfiles/tree/main), [bartekspitza](https://youtu.be/mSXOYhfDFYo?si=XOWWMjgAvOWjGMcx), [ThePrimeagen](https://github.com/ThePrimeagen), [omerxx](https://github.com/omerxx/dotfiles/tree/master), [Tech Craft](https://youtu.be/2OHrTQVlRMg?si=4VUN2J4W92AExoNT).
 
-In this guide, I'll share the tools and configurations I use when setting up a new Linux/Unix terminal environment. If you want, you can copy it entirely. But to get the most enjoyment out of it, I recommend to use it as a source of inspiration. Here's some other sources that inspired me on this topic:
+Here's an example of what my terminal looks like with Zsh, Powerlevel10k, tmux and NeoVim:
 
-* [mischavandenburg](https://github.com/mischavandenburg/dotfiles/tree/main)
-* [bartekspitza](https://youtu.be/mSXOYhfDFYo?si=XOWWMjgAvOWjGMcx)
-* [ThePrimeagen](https://github.com/ThePrimeagen)
-* [omerxx](https://github.com/omerxx/dotfiles/tree/master)
-* [Tech Craft](https://youtu.be/2OHrTQVlRMg?si=4VUN2J4W92AExoNT)
+![Terminal screenshot](/images/terminal-setup.jpg)
 
 # Basic setup
-The following instructions assume you're on a Linux system with the `apt` package manager, like Ubuntu or Debian. However, if you're using other distro's that's fine as well, just replace `apt` with the package manager of your choice.
+The following instructions assume you're using a Linux distribution with the `apt` package manager, such as Ubuntu or Debian. If you're using a different distribution with another package manager (like `pacman` for Arch Linux or `dnf` for Fedora), simply substitute `apt` with your system's package manager in the commands below.
 
-### Update apt
-```bash
-sudo apt-get update
-```
-### Install and upgrade basic packages
+Install and upgrade basic packages
 ```bash
 sudo apt-get update && sudo apt-get --upgrade install \
 	zip unzip sed curl wget git htop ncdu tree
 ```
-### Install Brew
-Install the [Brew package manager](https://brew.sh/)to get access to tools that are not available on `apt`.
 
-Install Brew and run the suggested command to add it to your PATH.
+Install the [Brew package manager](https://brew.sh/) to get access to tools that are not available on `apt`.
+After installing Brew, run the suggested command to add it to your PATH.
 ```bash
 (echo; echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"') >> /home/martijn/.bashrc  
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
@@ -47,11 +38,10 @@ apt-get install build-essential
 brew install gcc
 ```
 
-# Configure shell theme
-Your shell theme is based on personal preference, and I sometimes switch between different ones. When getting started, you'll need to choose your shell technology: Bash, Zsh, or Fish are the most popular options. For beginners, I recommend either Bash or Zsh since most tools we'll be installing support their configuration formats.
+# Shell theme
+Customizing the look and feel of your terminal gives it that personal touch, making it more enjoyable to use. There are several options to customize your shell theme, which will be listed below. First, choose your shell technology: Bash, Zsh, or Fish are the most popular options. I recommend Bash or Zsh because they are supported by most tools we'll be installing.
 
 ###  Zsh with Powerlevel10K theme (optional)
-We can use Zsh to improve and augment our terminal, feels more familiar to MacOS systems. Or choose to keep using Bash and [install Oh My Bash instead](#Oh My Bash).
 
 Use Oh My Zsh to manage the Zsh configuration.
 First, [install Zsh using apt or brew](https://github.com/ohmyzsh/ohmyzsh/wiki).
@@ -63,6 +53,7 @@ Now [install Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki).
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 Install a [nerd font for the terminal](https://github.com/romkatv/powerlevel10k?tab=readme-ov-file#fonts) to support more icons.
+
 Install the [Powerlevel10k theme for Oh My Zsh](https://github.com/romkatv/powerlevel10k?tab=readme-ov-file#manual).
 
 ### Oh My Bash
@@ -74,11 +65,11 @@ Consider skipping Zsh and modifying Bash instead with [Oh My Bash](https://githu
 curl -sS https://starship.rs/install.sh | sh
 ```
 
-# Install personal dotfiles
-Every time you move to a new machine, it's quite cumbersome to set everything up. Luckily on Linux, a lot of your basic configuration is stored inside dotfiles and `.config` inside your home directory. You can store them on a Git repository or any other place where you can access them easily. I stored my dotfiles in a public Github repository, so I can easily clone them on any machine I work on.
+# Dotfiles
+In Unix, configuration is stored inside dotfiles and `.config` inside your home directory. You can store them on a Git repository or any other place where you can access them easily. I stored my dotfiles in a public Github repository, so I can easily clone them on any machine I use.
 
 ### Github CLI
-Get the GitHub CLI to easily authorize with private git repositories.
+Get the GitHub CLI to authorize with private Git repositories.
 [Install using Brew](https://github.com/cli/cli?tab=readme-ov-file#homebrew)
 ```bash
 brew install gh
@@ -92,18 +83,19 @@ gh auth login
 gh repo clone MartijnVanbiervliet/dotfiles
 ```
 
-In my dotfiles repository, I've included an installer script that will symlink the dotfiles to my home directory. Using parameters to the installer script, you can choose to install only specific parts of the configuration. I recommend setting up your own repository for your personal dotfiles!
+In my dotfiles repository, I've included an installer script that will symlink the dotfiles to my home directory. Using parameters to the installer script, you can choose to install only specific parts of the configuration. I recommend setting up your own repository for your personal dotfiles.
 ```bash
 chmod +x ~/dotfiles/installer
 ~/dotfiles/installer
 ```
 
 # Text editor
-Modern code and text editors are ubiquitous. There are dozens to choose from. However, the old-school Vim - introduced in 1991 - still has a large following thanks to its keyboard-first approach. Even though, most developers remember it as the editor they couldn’t close when navigating through files on a Linux server, spawning an entire category of internet memes.
+Modern code and text editors are ubiquitous. There are dozens to choose from. However, the old-school Vim - introduced in 1991 - still has a large following thanks to its simplicity and keyboard-first approach [^1].
+[^1]: Although, a lot of developers are more familiar with the internet memes about closing Vim than the editor itself.
 
-Vim encourages users to abandon their mouse and perform all actions with the keyboard. Although there's a steeper learning curve, this experience allows you to perform frequent actions faster and more satisfyingly.  By not having to remove your hands from the keyboard and staying inside the terminal, there are fewer distractions to your work. Since I tried Vim motions - the default keyboard strokes and combos in Vim - I have fully embraced them in writing and coding. There is a reason why most modern code editors support Vim motions out-of-the-box or using a plugin.
+Vim encourages users to abandon their mouse and perform all actions with the keyboard. Although there's a steeper learning curve, the experience allows you to perform frequent actions faster and more satisfyingly. By not having to remove your hands from the keyboard and staying inside the terminal, there are fewer distractions to your work. Ever since I started learning Vim motions - the default keyboard strokes and combos in Vim - I have fully embraced them in writing and coding. There is a reason why most modern code editors support Vim motions out-of-the-box or with a plugin.
 
-However, Vim misses a lot of those features that modern code editors support and programmers can not live without: extensions, code debuggers, language engines, and visually interesting graphical interfaces. Neovim, a newer and modern version of Vim, attempts to solve all these limitations.
+While Vim is powerful in its simplicity, it doesn't include many essential features found in contemporary code editors - like plugin support, integrated debugging, language servers, and modern graphical interfaces. This is where Neovim comes in - a modern fork of Vim that extends the editor with all these capabilities while maintaining Vim's core philosophy.
 
 ## Neovim
 [Use Brew to install](https://github.com/neovim/neovim/blob/master/INSTALL.md#homebrew-on-macos-or-linux)
@@ -112,31 +104,38 @@ brew install neovim
 ```
 
 ### LazyVim
-LazyVim is a pre-configured Neovim configuration that is easy to use and customize. I already have a personal NeoVim configuration, based on LazyVim, as part of my dotfiles (as described in [Install personal dotfiles](#Install-personal-dotfiles)). But you can also install LazyVim from scratch.
+LazyVim is a pre-configured Neovim configuration that is easy to use and customize. My personal Neovim configuration, based on LazyVim, is included in my dotfiles (as described in [dotfiles](#dotfiles)). But you can also install LazyVim from scratch.
 [Install LazyVim](http://www.lazyvim.org/installation).
 
 # Terminal multiplexer
-A terminal multiplexer allows you to create multiple sessions in a single terminal window. Following the same benefits as described in the [Text editor](#Text-editor) section, it allows you to keep your workflow going without having to open a new terminal window. The most popular terminal multiplexer is [tmux](https://github.com/tmux/tmux). But there are alternatives like:
+A terminal multiplexer allows you to create multiple sessions in a single terminal window. A very popular terminal multiplexer is [tmux](https://github.com/tmux/tmux), but there are alternatives such as:
 * [Screen](https://www.gnu.org/software/screen/)
 * [Zellij](https://zellij.dev/)
 
 ## Tmux
-To leverage the benefits of tmux, install the tmux plugin manager and install the tmux configuration from my dotfiles.
+Install tmux using apt.
+```bash
+sudo apt install tmux
+```
 
-Install tmux plugin manager:
+Install the tmux plugin manager. Plugins allow you to add more functionality and configure a custom theme.
 ```bash
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
-Install tmux config from dotfiles
-```
-gh repo clone MartijnVanbiervliet/dotfiles
-cd dotfiles
-./install.sh
-```
-Start tmux `tmux` and install plugins: `Ctrl+b I`
-To use tmux resurrect, use `Ctrl+b + Ctrl+s` to save
-Detach from tmux session: `Ctrl+b d`
-Attach to tmux session: `tmux a`
+
+To install plugins, start `tmux` and install plugins with `Ctrl+b I`
+
+Here's some command to get you started:
+* To use tmux resurrect, use `Ctrl+b + Ctrl+s` to save.
+* Detach from tmux session: `Ctrl+b d`
+* Attach to tmux session: `tmux a`
+
+My tmux configuration is part of [my dotfiles](#dotfiles). It includes the following plugins:
+* [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect) - Save and restore tmux sessions
+* [tmux-continuum](https://github.com/tmux-plugins/tmux-continuum) - Auto-save and restore tmux sessions
+* [tmux-cpu](https://github.com/tmux-plugins/tmux-cpu) - Display CPU usage in tmux
+* [catppuccin/tmux](https://github.com/catppuccin/tmux) - Catppuccin theme for tmux
+* [christoomey/vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator) - Navigate between tmux and vim splits
 
 # Optional
 
@@ -152,11 +151,11 @@ Set BROWSER env to support opening host browser from WSL VM.
 ```bash
 echo "export BROWSER=wslview" >> ~/.bashrc
 ```
-This adds support to open your browser to authenticate with Github CLI later in the installation.
+This adds support to open your browser to authenticate with Github CLI.
 [Reference](https://superuser.com/questions/1262977/open-browser-in-host-system-from-windows-subsystem-for-linux)
 
 ### LazyGit
-[Install LazyGit](https://github.com/jesseduffield/lazygit?tab=readme-ov-file#installation)
+[LazyGit](https://github.com/jesseduffield/lazygit?tab=readme-ov-file#installation) is a terminal UI for Git commands.
 ```bash
 brew install lazygit
 ```
@@ -188,7 +187,7 @@ brew install fzf
 ```
 
 # Other
-Finally, here are some other tools that I find useful, I encourage you to see if they can help you improve your workflow.
+Finally, here are some other tools that I find useful, I encourage you to try them out and see if they improve your workflow.
 
 * **exa**: Modern replacement for `ls` with color-coding, git integration and tree view support
 * **ripgrep**: Lightning fast search tool that respects .gitignore rules and supports regex patterns
