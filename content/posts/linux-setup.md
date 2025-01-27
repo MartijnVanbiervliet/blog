@@ -9,7 +9,7 @@ As a software engineer, I spend a lot of time in the terminal. The terminal is t
 
 Brandon Rhodes expresses it well in this [talk](https://youtu.be/I56oFTm9UlE?si=9gMgSN2pq7l2tNmF). Every once in a while, it’s a good idea to stop and sharpen your tools. It's no use mowing a large field of grass with a blunt scythe. Learning how your tools work is essential if you use them day in and day out. You can tailor the configuration to your specific preferences and requirements to get the best out of it.
 
-In this guide, I'll share some tools and configurations for setting up a new Linux/Unix terminal environment. You can use it as a source of inspiration to set up your own terminal environment. Here's some other sources that inspired me on this topic: [mischavandenburg](https://github.com/mischavandenburg/dotfiles/tree/main), [bartekspitza](https://youtu.be/mSXOYhfDFYo?si=XOWWMjgAvOWjGMcx), [ThePrimeagen](https://github.com/ThePrimeagen), [omerxx](https://github.com/omerxx/dotfiles/tree/master), [Tech Craft](https://youtu.be/2OHrTQVlRMg?si=4VUN2J4W92AExoNT).
+In this guide, I'll share my favorite tools and configurations for setting up a new Linux/Unix terminal environment. You can use it as a source of inspiration to set up your own terminal. Here's some other sources that inspired me on this topic: [mischavandenburg](https://github.com/mischavandenburg/dotfiles/tree/main), [bartekspitza](https://youtu.be/mSXOYhfDFYo?si=XOWWMjgAvOWjGMcx), [ThePrimeagen](https://github.com/ThePrimeagen), [omerxx](https://github.com/omerxx/dotfiles/tree/master), [Tech Craft](https://youtu.be/2OHrTQVlRMg?si=4VUN2J4W92AExoNT).
 
 Here's an example of what my terminal looks like with Zsh, Powerlevel10k, tmux and NeoVim:
 
