@@ -1,6 +1,6 @@
 +++
-date = '2025-01-13T21:48:55+01:00'
-draft = true
+date = '2025-02-04T21:48:55+01:00'
+draft = false
 title = 'Supercharge your terminal'
 description = "How to set up a terminal environment that's both powerful and enjoyable."
 +++
