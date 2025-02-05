@@ -2,10 +2,10 @@
 date = '2025-01-13T21:48:55+01:00'
 draft = true
 title = 'Supercharge your terminal'
-description = "How to set up a terminal environment that's both powerful and enjoyable"
+description = "How to set up a terminal environment that's both powerful and enjoyable."
 +++
 
-As a software engineer, I spend a lot of time in the terminal. The terminal is the holy grail of power users. Every action you take is directly at your fingertips - the keys on your keyboard. Learning to use the terminal effectively not only boosts your productivity but also makes the experience more enjoyable.
+As a software engineer, I spend a lot of time using the terminal. The terminal can be an incredibly powerful and effective tool in your everyday workflow. Every action you take is directly at your fingertips - the keys on your keyboard. Learning to use a command-line interface effectively not only boosts your productivity but also makes the experience more enjoyable.
 
 Brandon Rhodes expresses it well in this [talk](https://youtu.be/I56oFTm9UlE?si=9gMgSN2pq7l2tNmF). Every once in a while, it’s a good idea to stop and sharpen your tools. It's no use mowing a large field of grass with a blunt scythe. Learning how your tools work is essential if you use them day in and day out. You can tailor the configuration to your specific preferences and requirements to get the best out of it.
 
@@ -66,10 +66,13 @@ curl -sS https://starship.rs/install.sh | sh
 ```
 
 # Dotfiles
-In Unix, configuration is stored inside dotfiles and `.config` inside your home directory. You can store them on a Git repository or any other place where you can access them easily. I stored my dotfiles in a public Github repository, so I can easily clone them on any machine I use.
+In Unix, configuration is stored inside dotfiles and `.config` inside your home directory.
+You can store them on a Git repository or any other place where you can access them easily.
+I stored my dotfiles in a public Github repository, so I can clone them to any machine.
 
 ### Github CLI
 Get the GitHub CLI to authorize with private Git repositories.
+
 [Install using Brew](https://github.com/cli/cli?tab=readme-ov-file#homebrew)
 ```bash
 brew install gh
