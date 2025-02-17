@@ -1,7 +1,7 @@
 +++
 date = '2025-02-04T21:48:55+01:00'
 draft = false
-title = 'Supercharge your terminal'
+title = "Level Up Your Terminal"
 description = "How to set up a terminal environment that's both powerful and enjoyable."
 +++
 
