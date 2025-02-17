@@ -4,7 +4,7 @@ draft = true
 title = 'Truly Open AI at FOSDEM 2025'
 +++
 
-This month, I attended FOSDEM, the conference that unites developers and open-source software enthusiasts across Europe. It's an amazing opportunity to learn about the latest improvements in open-source software. Developers across Europe unite at this conference, to share how they use or create open-source software. The energy in the open-source community is overwhelming. With over a thousand lectures in a single weekend, FOSDEM offers something for everyone.
+This month, I attended FOSDEM, the conference that unites developers and open-source software enthusiasts across Europe. It's an amazing opportunity to learn about the latest improvements in open-source software. At FOSDEM, speakers share their latest contributions to open-source projects and how they can be used or improved. The energy in the open-source community is overwhelming. With over a thousand lectures in a single weekend, FOSDEM offers something for everyone.
 
 This year's edition took place on the campus of Université Libre de Bruxelles. While there were many lectures to enjoy, I spent most of Sunday in the *Low-level AI Engineering and Hacking* developer room. In this article, I look at three projects that caught my interest.
 
