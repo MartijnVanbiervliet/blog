@@ -32,6 +32,14 @@ Paddler introduces load balancing for AI models, based on llama.cpp servers. A u
 
 Check out the GitHub repository [here](https://github.com/distantmagic/paddler).
 
+## Other 
+
+Here’s some other projects worth mentioning:
+
+- [Model Openness Framework](https://isitopen.ai/): A framework to assess and compare the openness of a model. It distinguishes different levels of openness and completeness based on the model weights, training data, license terms and documentation.
+- [Ramalama](https://github.com/containers/ramalama): A project to make it easier to get an AI model running on your hardware using OCI container images.
+- [DataPrepKit](https://github.com/IBM/data-prep-kit): Toolkit for data preparation of LLM training data. It includes functions for document ingestion, deduplication, filtering and language-specific tasks such as document chunking.
+
 ## Conclusion
 
 Attending FOSDEM introduces you to a plethora of open-source tools that are worth a look. The amount of knowledge that is shared is staggering, with over 1000 lectures to attend in over 70 rooms. As I attended only a single developer room, I didn't even scratch the surface. The event is completely volunteer-driven, and I was impressed by the amount of engagement to organize this event.
