@@ -26,7 +26,7 @@ Learn more about it in [this excellent blog post](https://www.redhat.com/en/topi
 
 ## Paddler
 
-Application load balancers are ubiquitous these days. Almost all API or web applications run behind a reverse proxy and load balancer to evenly distribute application load across compute resources. The algorithms are highly optimized for a deterministic and predictable request load. However, many AI applications have very unpredictable execution times. Models with different sizes can differ highly in execution time. Furthermore, depending on the input, a response from the same model can differ dozens of seconds. In addition, large models can leverage dedicated batching algorithms and concurrency to increase throughput.
+Application load balancers are ubiquitous today. Nearly all API or web applications run behind a reverse proxy and load balancer to uniformly distribute application load across compute resources. The algorithms are highly optimized and do very well for a deterministic request load. However, AI applications can have highly unpredictable execution times. Model size has a particularly high impact on execution time. Furthermore, depending on the input, a response from the same model can diverge dozens of seconds. In contrast with regular CPU-bound tasks, large foundation models can leverage dedicated batching algorithms and concurrency to increase throughput.
 
 Paddler introduces load balancing for AI models, based on llama.cpp servers. A user agent monitors available llama.cpp servers, and keeps track of available slots. Requests are buffered and evenly distributed across available server slots.
 
@@ -42,6 +42,6 @@ Here’s some other projects worth mentioning:
 
 ## Conclusion
 
-Attending FOSDEM introduces you to a plethora of open-source tools that are worth a look. The amount of knowledge that is shared is staggering, with over 1000 lectures to attend in over 70 rooms. As I attended only a single developer room, I didn't even scratch the surface. The event is completely volunteer-driven, and I was impressed by the amount of engagement to organize this event.
+Attending FOSDEM introduces you to a plethora of intriguing open-source tools. The amount of knowledge exchanged is staggering, with over 1000 lectures to attend in over 70 rooms. Because I attended only a single developer room, I didn't even scratch the surface. The event is completely volunteer-driven, and the engagement to organize this event is remarkable.
 
-For those who have not attended before, let me leave you with some small advice: plan your day wisely, because the schedule is too tight for any coffee breaks or lunchtime without missing any lectures. I wholeheartedly recommend visiting the 2026 edition! Find out more on the [FOSDEM website](https://fosdem.org/2025/about/).
+If you haven't attended before, let me leave you with a small piece of advice: plan your day wisely. The schedule is too tight for any coffee breaks or lunchtime, so make sure you don't miss out on your favorite talks. I wholeheartedly recommend visiting the 2026 edition! Find out more on the [FOSDEM website](https://fosdem.org/2025/about/).
