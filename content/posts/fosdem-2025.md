@@ -25,7 +25,7 @@ ZML can compile models to the following accelerator runtimes, including NVIDIA C
 
 ## InstructLab
 
-Large foundation models like GPT-4 and Claude excel at many tasks. However, because they are closed source, they can only be accessed through proprietary internet APIs. Some applications, particularly those handling sensitive data, are prohibited from using online services. For example, the healthcare industry is slower to adopt cloud services [^1]. Even though the adoption rate of cloud services in healthcare is rising it is still low in comparison with other industries due to the stringent compliance laws [^2]. Furthermore, new regulations can make it increasingly difficult to use personal health data in cloud systems [^3].
+Large foundation models like GPT-4 and Claude excel at many tasks. However, because they are closed source, they can only be accessed through proprietary internet APIs. Industries that handle sensitive data, such as healthcare, are limited in using online services for their applications. Even though the adoption rate of cloud services in healthcare is rising, it is low compared to other industries due to stringent compliance laws [^1][^2]. Furthermore, new regulations can make it increasingly difficult to use personal health data in cloud systems [^3].
 
 [^1]: https://www.skyhighsecurity.com/industry-perspectives/why-healthcare-organizations-are-slower-to-adopt-cloud-services.html
 
