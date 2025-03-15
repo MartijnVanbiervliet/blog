@@ -74,4 +74,4 @@ Here's some other projects worth mentioning:
 ## Conclusion
 Attending FOSDEM introduces a wealth of intriguing open-source tools. The amount of knowledge exchanged is staggering, with over 1000 lectures to attend in over 70 rooms. Because I attended only a single developer room, I didn't even scratch the surface.
 
-If you're planning to attend the conference next year, make sure to plan your schedule in advance, so you don't miss out on your favourite talks: the schedule is too tight for any coffee breaks or lunchtime! I wholeheartedly recommend visiting the 2026 edition! Find out more on the [FOSDEM website](https://fosdem.org/2025/about/).
+If you're planning to attend the conference next year, make sure to plan your schedule in advance, so you don't miss out on your favourite talks: the schedule is too tight for any coffee breaks or lunchtime. I wholeheartedly recommend visiting the 2026 edition! Find out more on the [FOSDEM website](https://fosdem.org/2025/about/).
