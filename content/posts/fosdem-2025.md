@@ -53,7 +53,7 @@ Learn more about it in [this blog post](https://www.redhat.com/en/topics/ai/what
 
 ## Paddler
 
-Application load balancers are ubiquitous today, ranging from web server load balancers like NGINX, container load balancers like Kubernetes or Traefik, to cloud-native load balancers like AWS Elastic Load Balancing. Applications handling large volumes of traffic typically use load balancers to uniformly distribute application load across compute resources, improving performance and reliability. The algorithms are highly optimized and operate effectively for a deterministic request load. Some common algorithms are round-robin, which distributes traffic in rotation to each server, and the least connections algorithm, which distributes requests to the server with the least number of active connections. 
+Application load balancers are ubiquitous today, ranging from web server load balancers like NGINX, container load balancers like Kubernetes or Traefik, to cloud-native load balancers like AWS Elastic Load Balancing. Applications handling large volumes of traffic use these load balancers to uniformly distribute load across compute resources, improving performance and reliability. Common load balancer algorithms are round-robin, which distributes traffic in rotation to each server, and the least connections algorithm, which distributes requests to the server with the least number of active connections. 
 
 However, AI applications can have highly unpredictable execution times. Because larger models require more computational resources, they can have a large impact on execution time. Furthermore, depending on the input, a response from the same model can vary by several  seconds [^20]. 
 
@@ -72,9 +72,6 @@ Here's some other projects worth mentioning:
 - [DataPrepKit](https://github.com/IBM/data-prep-kit): IBM's Toolkit for data preparation of LLM training data. It includes functions for document ingestion, deduplication, filtering and language-specific tasks such as document chunking.
 
 ## Conclusion
-Attending FOSDEM introduces you to a wealth of intriguing open-source tools. The amount of knowledge exchanged is staggering, with over 1000 lectures to attend in over 70 rooms. Because I attended only a single developer room, I didn't even scratch the surface.
+Attending FOSDEM introduces a wealth of intriguing open-source tools. The amount of knowledge exchanged is staggering, with over 1000 lectures to attend in over 70 rooms. Because I attended only a single developer room, I didn't even scratch the surface.
 
-If you're planning to attend the conference next year, make sure to plan your schedule in advance, so you don't miss out on your favourite talks: the schedule is too tight for any coffee breaks or lunchtime. I wholeheartedly recommend visiting the 2026 edition! Find out more on the [FOSDEM website](https://fosdem.org/2025/about/).
-
-
-
+If you're planning to attend the conference next year, make sure to plan your schedule in advance, so you don't miss out on your favourite talks: the schedule is too tight for any coffee breaks or lunchtime! I wholeheartedly recommend visiting the 2026 edition! Find out more on the [FOSDEM website](https://fosdem.org/2025/about/).
