@@ -1,6 +1,6 @@
 +++
-date = '2025-02-17T21:29:48+01:00'
-draft = true
+date = '2025-03-15T10:16:00+01:00'
+draft = false
 title = 'Truly Open AI at FOSDEM 2025'
 +++
 
