@@ -1,5 +1,13 @@
 # Blog using Hugo
 
+
+## Install
+
+[Install with Homebrew.](https://gohugo.io/installation/linux/#homebrew)
+```
+brew install hugo
+```
+
 ## Deploy
 To publish the static site:
 ```
