@@ -3,7 +3,7 @@ draft = false
 title = 'Hi 👋'
 +++
 
-I'm Martijn, a belgian software engineer specialized in AI & ML.
+I'm Martijn, a Belgian software engineer specialized in AI & ML.
 
 I work as AI Software Architect at Dedalus Healthcare where I'm responsible for architecture, design and implementation of AI-native solutions for the healthcare industry. Projects include clinical risk prediction, natural language processing, and generative AI applications. My expertise includes building machine learning pipelines, developer tooling, ML Ops and observability, cloud infrastructure, and productizing generative AI applications.
 
