@@ -1,7 +1,7 @@
 +++
 date = '2026-11-15T16:26:00+01:00'
 draft = false
-title = 'Option 0: Do nothing'
+title = 'Option 0'
 +++
 
 As a software engineer, your job is to solve problems with software. Your entire career is built on the premise that, given a computer and a programming language, you can transform almost any input into a desired output.
